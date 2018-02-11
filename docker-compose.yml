@@ -1,0 +1,10 @@
+version: '3'
+services: 
+  nginx:
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: .
+    image: cesao89/ralcontrol
+    container_name: ralcontrol
+    ports:
+      - "80:80"
